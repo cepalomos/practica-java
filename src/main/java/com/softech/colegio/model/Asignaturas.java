@@ -10,11 +10,23 @@ import java.util.List;
  *
  * @author Scorpion
  */
-class Asignaturas {
+public class Asignaturas {
+
     private String nombre;
     private Profesor profesor;
     private List<Estudiantes> estudiantes;
     private Cursos curso;
+
+    public Asignaturas() {
+    }
+
+    public Asignaturas(String nombre, Profesor profesor, List<Estudiantes> estudiantes, Cursos curso) {
+        this.nombre = nombre;
+        this.profesor = profesor;
+        this.estudiantes = estudiantes;
+        this.curso = curso;
+    }
+    
 
     public String getNombre() {
         return nombre;
@@ -47,6 +59,5 @@ class Asignaturas {
     public void setCurso(Cursos curso) {
         this.curso = curso;
     }
-    
-    
+
 }

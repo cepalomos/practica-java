@@ -10,10 +10,20 @@ import java.util.List;
  *
  * @author Scorpion
  */
-class Cursos {
+public class Cursos {
+
     private int grado;
     private String salon;
     private List<Asignaturas> asignaturas;
+
+    public Cursos() {
+    }
+
+    public Cursos(int grado, String salon, List<Asignaturas> asignaturas) {
+        this.grado = grado;
+        this.salon = salon;
+        this.asignaturas = asignaturas;
+    }
 
     public int getGrado() {
         return grado;
@@ -38,6 +48,5 @@ class Cursos {
     public void setAsignaturas(List<Asignaturas> asignaturas) {
         this.asignaturas = asignaturas;
     }
-    
-    
+
 }
